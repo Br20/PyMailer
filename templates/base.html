@@ -1,4 +1,22 @@
-alter
-{% block content %}
+<!DOCTYPE html>
+<title> {% block title %}{% endblock %} </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-{% endblock %}
+<nav>
+    PyMail<b>er</b>
+</nav>
+
+<section class="content">
+    <div class="top-bar">
+        <form action="" method="get">
+            <input type="search" name="search" placeholder="Do you want search something?">
+        </form>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</section>
+
