@@ -17,11 +17,13 @@ nav {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
+    text-align: center;
 }
 
 .content{
     margin-left: 180px;
     margin-top: 30px;
+    margin-right: 20px;
 }
 
 form input{
@@ -34,4 +36,33 @@ form input{
     box-shadow: 0 1px 5px #ddd;
     outline: none;
     display: block;
+}
+
+ul{
+    padding-left: 0;
+}
+
+.mail{
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    box-shadow: 0 1px 5px #ddd;
+    border-radius: 5px;
+}
+
+.mail-content{
+    margin: 5px 0 0 0;
+    color: #aaa;
+}
+
+.addr_to{
+    color: #674dd4;
+}
+
+hr{
+    border: None;
+    height: 1px;
+    background-color: #eee;
 }

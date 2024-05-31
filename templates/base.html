@@ -5,9 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-<nav>
-    PyMail<b>er</b>
-</nav>
+<nav>PyMail<b>er</b></nav>
 
 <section class="content">
     <div class="top-bar">
@@ -15,6 +13,12 @@
             <input type="search" name="search" placeholder="Do you want search something?">
         </form>
     </div>
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
     {% block content %}
 
     {% endblock %}
