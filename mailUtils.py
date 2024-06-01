@@ -1,5 +1,5 @@
 from flask import  (current_app)
-from  sendgrid import SendGridAPIClient
+from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import *
 
 def send(to, subject, content):

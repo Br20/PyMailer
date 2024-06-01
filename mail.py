@@ -6,7 +6,7 @@ bp = Blueprint('mail', __name__, url_prefix="/")
 
 @bp.route('/', methods=['GET'])
 def index():
-    search = request.args.get('search')
+    search = request.args.get('search') if request.args.get('search') is not None else "" 
     db, c = get_db()
     c.execute(
         'SELECT * FROM email WHERE content LIKE %s',("%"+search+"%",)
