@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 
 {% block header %}
-    <h1> {% block title %} Sended mails {% endblock %}</h1>
+    <h1> {% block title %} Sended emails {% endblock %}</h1>
 {% endblock%}
+
+{% block action %}
+<a href="{{ url_for('mail.create')}}" class="button">New email</a>
+{% endblock %}
 
 {% block content%}
 <ul>
